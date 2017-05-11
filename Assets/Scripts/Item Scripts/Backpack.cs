@@ -6,5 +6,6 @@ using UnityEngine;
 public class Backpack : ScriptableObject
 {
     public List<Item> Inventory;
+    public int Capacity;
     public float MaxCarryWeight;        // Change
 }
