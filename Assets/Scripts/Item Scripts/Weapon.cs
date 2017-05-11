@@ -6,5 +6,5 @@ using UnityEngine;
 public class Weapon : Item
 {
     public float Damage;
-    public float WeaponRange;       // Name Change
+    public float WeaponRange;
 }
