@@ -4,23 +4,23 @@ using UnityEngine;
 
 public class BackpackBehaviour : MonoBehaviour
 {
-
-    List<Item> items = new List<Item>();
-    BackpackConfig backpackconfig;
+    public Backpack backpackconfig;
+    Backpack current;
 
 	// Use this for initialization
 	void Start ()
     {
+        current = backpackconfig;
 	}
 	
 	// Update is called once per frame
 	void Update ()
     {
-        OnTriggerEnter(Collider other)
-        {
-
-        }
+        
     }
 
+    OnTriggerEnter(Collider other)
+    {
+    }
 
 }
