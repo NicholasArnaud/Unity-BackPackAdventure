@@ -6,8 +6,5 @@ using UnityEngine;
 public class AntidoteShot : Ammo
 {
 
-	void Start ()
-    {
-		
-	}
+	
 }

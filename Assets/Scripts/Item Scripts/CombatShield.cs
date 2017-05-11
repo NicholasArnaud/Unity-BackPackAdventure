@@ -7,9 +7,5 @@ using UnityEngine;
 public class CombatShield : Armor
 {
 
-	void Start ()
-    {
-   
-	}
 
 }
