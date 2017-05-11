@@ -8,7 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 155a6458b8c895a4ea7e096565f13063, type: 3}
-  m_Name: Backpack
+  m_Script: {fileID: 11500000, guid: 741ad4edd5d5dc449a34a73b6c44eaa5, type: 3}
+  m_Name: Rifle
   m_EditorClassIdentifier: 
-  Inventory: []
+  Damage: 0
+  WeaponRange: 0
+  Durabillity: 0

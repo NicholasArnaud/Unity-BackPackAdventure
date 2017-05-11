@@ -8,7 +8,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 155a6458b8c895a4ea7e096565f13063, type: 3}
-  m_Name: Backpack
+  m_Script: {fileID: 11500000, guid: 41dc89c1e9b4d8f479b2243bc9fc377d, type: 3}
+  m_Name: First Aid Kit
   m_EditorClassIdentifier: 
-  Inventory: []
+  HealAmount: 0
