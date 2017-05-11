@@ -8,10 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f336ca45b21dd844a9d0566a3a2f9bd6, type: 3}
+  m_Script: {fileID: 11500000, guid: 7299280333d6a7f44b62bc02e6b80fa8, type: 3}
   m_Name: Combat Shield
   m_EditorClassIdentifier: 
-  ItemName: Combat Sheild
-  ItemID: 4
-  Weight: 20
+  ItemName: Combat Shield
+  ItemID: 0
+  Weight: 0
   Absorption: 0

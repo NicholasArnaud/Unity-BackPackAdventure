@@ -8,10 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 72836855fd78a444daef821a7bc39498, type: 3}
-  m_Name: DefaultAmmo
+  m_Script: {fileID: 11500000, guid: 10600e39510bf0a43aae7e89bd513a35, type: 3}
+  m_Name: Ammo
   m_EditorClassIdentifier: 
-  ItemName: Ammo
-  ItemID: 1
-  Weight: 0.2
-  RealDmg: 10
+  ItemName: Default Ammo
+  ItemID: 0
+  Weight: 0
+  RealDmg: 0

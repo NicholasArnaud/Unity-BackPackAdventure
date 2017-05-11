@@ -5,10 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Knife", menuName = "Item/Weapon/Knife")]
 public class Knife : Weapon
 {
-
-    void Start()
-    {
-
-    }
+    
 
 }

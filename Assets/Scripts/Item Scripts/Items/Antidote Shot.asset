@@ -8,10 +8,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a84baa7e963460e4fa46bc799400f569, type: 3}
+  m_Script: {fileID: 0}
   m_Name: Antidote Shot
-  m_EditorClassIdentifier: 
+  m_EditorClassIdentifier: Assembly-CSharp::AntidoteShot
   ItemName: Antidote Shot
-  ItemID: 2
-  Weight: 0.2
-  RealDmg: -10
+  ItemID: 0
+  Weight: 0
+  RealDmg: 0
