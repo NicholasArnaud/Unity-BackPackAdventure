@@ -6,4 +6,5 @@ using UnityEngine;
 public class Ammo : Item
 {
     public int RealDmg;
+    public float DmgOverTime;           // Change
 }

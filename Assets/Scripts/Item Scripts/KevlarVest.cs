@@ -6,8 +6,4 @@ using UnityEngine;
 public class KevlarVest : Armor
 {
 
-	void Start ()
-    {
-	}
-	
 }

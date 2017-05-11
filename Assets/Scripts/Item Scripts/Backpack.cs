@@ -5,5 +5,6 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Backpack", menuName = "Backpack")]
 public class Backpack : ScriptableObject
 {
-    public List<Item> Inventory;        // Name Change
+    public List<Item> Inventory;
+    public float MaxCarryWeight;        // Change
 }
