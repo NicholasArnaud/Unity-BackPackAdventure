@@ -8,11 +8,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2d66b3f1b39676e45b8471046faaaf23, type: 3}
-  m_Name: Default Weapon
+  m_Script: {fileID: 11500000, guid: bda6930230d8e0b49b230a43b78617fb, type: 3}
+  m_Name: Weapon
   m_EditorClassIdentifier: 
   ItemName: Default Weapon
-  ItemID: 10
-  Weight: 5
-  Damage: 5
-  Range: 5
+  ItemID: 0
+  Weight: 0
+  Damage: 0
+  WeaponRange: 0

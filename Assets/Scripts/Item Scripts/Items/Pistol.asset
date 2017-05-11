@@ -8,11 +8,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7fd8da4657505f4eac787909c50b51d, type: 3}
+  m_Script: {fileID: 11500000, guid: 06b9a27a03cac184d81b6056c9982d20, type: 3}
   m_Name: Pistol
   m_EditorClassIdentifier: 
   ItemName: Pistol
-  ItemID: 9
-  Weight: 5
-  Damage: 35
-  Range: 50
+  ItemID: 0
+  Weight: 0
+  Damage: 0
+  WeaponRange: 0

@@ -8,11 +8,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d610874c0822194d812371914173236, type: 3}
+  m_Script: {fileID: 11500000, guid: 8e44cdb8d33876d4e88a21bdeb06de05, type: 3}
   m_Name: Knife
   m_EditorClassIdentifier: 
-  ItemName: KNife
-  ItemID: 8
-  Weight: 5
-  Damage: 10
-  Range: 5
+  ItemName: Knife
+  ItemID: 0
+  Weight: 0
+  Damage: 0
+  WeaponRange: 0
