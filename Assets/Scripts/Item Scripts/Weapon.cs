@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Medicine", menuName = "Item/Weapon")]
+[CreateAssetMenu(fileName = "Weapon", menuName = "Item/Weapon/Defualt Weapon")]
 public class Weapon : Item
 {
     public float Damage;
-    public float DamageRange;
+    public float Range;
 }

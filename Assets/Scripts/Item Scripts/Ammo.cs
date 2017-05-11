@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "Medicine", menuName = "Item/Ammo")]
+[CreateAssetMenu(fileName = "Ammo", menuName = "Item/Ammo/Default Ammo")]
 public class Ammo : Item
 {
     public int RealDmg;
