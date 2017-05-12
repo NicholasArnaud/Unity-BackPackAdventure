@@ -174,6 +174,12 @@ Prefab:
       propertyPath: Capacity
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 114790882978018504, guid: 965a46b021957174894f4307590e7a7f,
+        type: 2}
+      propertyPath: ItemPrefab
+      value: 
+      objectReference: {fileID: 1369568064962274, guid: 7da5c5fa83eadcd488fd476c244f70a8,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 965a46b021957174894f4307590e7a7f, type: 2}
   m_IsPrefabParent: 0
