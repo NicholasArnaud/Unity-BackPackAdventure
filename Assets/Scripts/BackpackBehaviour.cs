@@ -27,5 +27,33 @@ public class BackpackBehaviour : MonoBehaviour
         {
             Invetory.RemoveAt(0);
         }
+
+        if (Input.GetKeyDown(KeyCode.W))
+        {
+            var position = this.transform.position;
+            position.y++;
+            this.transform.position = position;
+        }
+
+        if (Input.GetKeyDown(KeyCode.A))
+        {
+            var position = this.transform.position;
+            position.x--;
+            this.transform.position = position;
+        }
+
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            var position = this.transform.position;
+            position.y--;
+            this.transform.position = position;
+        }
+
+        if (Input.GetKeyDown(KeyCode.D))
+        {
+            var position = this.transform.position;
+            position.x++;
+            this.transform.position = position;
+        }
     }
 }
