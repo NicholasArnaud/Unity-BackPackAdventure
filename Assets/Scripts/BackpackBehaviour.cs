@@ -2,13 +2,37 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
+using UnityEngine.Events;               // Change
 
 public class BackpackBehaviour : MonoBehaviour
 {
+    // Change ______________________________________________________________________
+    [System.Serializable]
+    public class OnBackPackChange : UnityEvent
+    {
+    }
+    public OnBackPackChange onBackPackChange;
+
+    [System.Serializable]
+    public class OnBackPackChangeDup : UnityEvent
+    {
+    }
+
+    public OnBackPackChangeDup onBackPackChangeDup;
+
+
+
     public Backpack BackpackConfig;
     public List<Item> Invetory;
     public GameObject ItemPrefab;
+
     private int _capacity;
+
+    private void Awake()
+    {
+        onBackPackChangeDup.AddListener(AddToPack());
+        onBackPackChange.AddListener(PlaceItem);
+    }
 
     private void Start()
     {
@@ -16,6 +40,7 @@ public class BackpackBehaviour : MonoBehaviour
         BackpackConfig = Instantiate(BackpackConfig);
         Invetory = BackpackConfig.Inventory;
     }
+    // End of changes ______________________________________________________________________
 
     public void AddToPack(Item item)
     {
@@ -78,4 +103,6 @@ public class BackpackBehaviour : MonoBehaviour
             PlaceItem();
         }
     }
+
+   
 }
