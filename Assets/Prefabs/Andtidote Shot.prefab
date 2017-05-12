@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23003194601544548}
   - component: {fileID: 61753676076802444}
   - component: {fileID: 50761480758584374}
-  - component: {fileID: 114320671728742166}
+  - component: {fileID: 114243178385654704}
   m_Layer: 0
   m_Name: Andtidote Shot
   m_TagString: Untagged
@@ -128,7 +128,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114320671728742166
+--- !u!114 &114243178385654704
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1929349125552700}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3210c7edd30fc040aa90f919454284b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f6e66cf0d1b6ab4b812e924e49d47f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemConfig: {fileID: 11400000, guid: d6a2548f936de2d49afd1ffc258171ec, type: 2}
+  itemConfig: {fileID: 11400000, guid: 625a452ec5fe18440b99f16147a30bc8, type: 2}

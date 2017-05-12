@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 23340825714268274}
   - component: {fileID: 61636841347247752}
   - component: {fileID: 50089937897980306}
-  - component: {fileID: 114530108155755816}
+  - component: {fileID: 114332988591104666}
   m_Layer: 0
   m_Name: Kevlar Vest
   m_TagString: Untagged
@@ -128,7 +128,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &114530108155755816
+--- !u!114 &114332988591104666
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -136,7 +136,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1809965692998360}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e3210c7edd30fc040aa90f919454284b, type: 3}
+  m_Script: {fileID: 11500000, guid: 0f6e66cf0d1b6ab4b812e924e49d47f5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemConfig: {fileID: 11400000, guid: a7503e2e975369641bc019f2463f591f, type: 2}
+  itemConfig: {fileID: 11400000, guid: 02c94894896e5cd478be52342a073a4c, type: 2}
