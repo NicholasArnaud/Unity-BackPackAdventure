@@ -6,16 +6,19 @@ public class BackpackBehaviour : MonoBehaviour
 {
     public Backpack BackpackConfig;
     public List<Item> Invetory;
-    public int Capacity;
+    private int _capacity;
+
     private void Start()
     {
+        _capacity = BackpackConfig.Capacity;
         BackpackConfig = Instantiate(BackpackConfig);
-        Invetory = BackpackConfig.CurrentBackPack;
+        Invetory = BackpackConfig.Inventory;
     }
 
     public void AddToPack(Item item)
     {
-        Invetory.Add(item);
+        if (Invetory.Count <= _capacity)
+            Invetory.Add(item);
     }
 
     private void Update()
