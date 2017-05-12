@@ -6,4 +6,5 @@ using UnityEngine;
 public class Armor : Item
 {
     public float Absorption;
+    public float AddedWeightCapacity;       //Change
 }
