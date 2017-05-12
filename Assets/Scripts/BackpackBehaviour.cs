@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.ComponentModel;
 using UnityEngine;
 
 public class BackpackBehaviour : MonoBehaviour
 {
     public Backpack BackpackConfig;
     public List<Item> Invetory;
+    public GameObject ItemPrefab;
     private int _capacity;
 
     private void Start()
@@ -21,10 +23,25 @@ public class BackpackBehaviour : MonoBehaviour
             Invetory.Add(item);
     }
 
+    public void PlaceItem()
+    {
+        if(Invetory.Count == 0)
+            return;
+        
+        var position = this.transform.position;
+        position.x++;        
+        var newItem = Instantiate(ItemPrefab, position, Quaternion.identity);
+        newItem.GetComponent<ItemBehaviour>().itemConfig = Invetory[0];
+        newItem.name = Invetory[0].name + "(Clone)";
+        Invetory.RemoveAt(0);
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            if (Invetory.Count == 0)
+                return;
             Invetory.RemoveAt(0);
         }
 
@@ -54,6 +71,11 @@ public class BackpackBehaviour : MonoBehaviour
             var position = this.transform.position;
             position.x++;
             this.transform.position = position;
+        }
+
+        if (Input.GetKeyDown(KeyCode.T))
+        {
+            PlaceItem();
         }
     }
 }

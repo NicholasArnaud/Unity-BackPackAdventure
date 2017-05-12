@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: Backpack
   m_EditorClassIdentifier: 
   Inventory: []
-  Capacity: 0
+  Capacity: 5
   MaxCarryWeight: 0
