@@ -6,4 +6,5 @@ using UnityEngine;
 public class Medicine : Item
 {
     public float HealAmount;
+    public float HealAmountOverTime;        //Change
 }
