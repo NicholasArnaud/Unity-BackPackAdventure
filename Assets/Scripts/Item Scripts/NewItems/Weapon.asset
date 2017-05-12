@@ -8,8 +8,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0951b213afb83104fa602aa7fb633324, type: 3}
-  m_Name: Antidote Shot
+  m_Script: {fileID: 11500000, guid: c60f8174c114368458149e963cfe83ed, type: 3}
+  m_Name: Weapon
   m_EditorClassIdentifier: 
-  RealDmg: 0
-  DmgOverTime: 0
+  Damage: 0
+  WeaponRange: 0
+  Durabillity: 0
