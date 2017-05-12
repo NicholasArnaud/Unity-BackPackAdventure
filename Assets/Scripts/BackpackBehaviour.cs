@@ -15,7 +15,8 @@ public class BackpackBehaviour : MonoBehaviour
 
     public void AddToPack(Item item)
     {
-        Invetory.Add(item);
+        if (Invetory.Count <= Capacity)
+            Invetory.Add(item);
     }
 
     private void Update()

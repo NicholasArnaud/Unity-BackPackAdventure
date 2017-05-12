@@ -108,82 +108,58 @@ NavMeshSettings:
     tileSize: 256
     accuratePlacement: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &365759881
+--- !u!1001 &136715951
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114755699585420742, guid: 65208c2b67fb1c449867ca3639fb9f2b,
-        type: 2}
-      propertyPath: Invetory.Array.size
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4210188350640108, guid: 65208c2b67fb1c449867ca3639fb9f2b, type: 2}
+    - target: {fileID: 4210188350640108, guid: 145a14a838f88824581d4dca39264188, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 3.83
+      value: 4.55
       objectReference: {fileID: 0}
-    - target: {fileID: 4210188350640108, guid: 65208c2b67fb1c449867ca3639fb9f2b, type: 2}
+    - target: {fileID: 4210188350640108, guid: 145a14a838f88824581d4dca39264188, type: 2}
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4210188350640108, guid: 65208c2b67fb1c449867ca3639fb9f2b, type: 2}
+    - target: {fileID: 4210188350640108, guid: 145a14a838f88824581d4dca39264188, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4210188350640108, guid: 65208c2b67fb1c449867ca3639fb9f2b, type: 2}
+    - target: {fileID: 4210188350640108, guid: 145a14a838f88824581d4dca39264188, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4210188350640108, guid: 65208c2b67fb1c449867ca3639fb9f2b, type: 2}
+    - target: {fileID: 4210188350640108, guid: 145a14a838f88824581d4dca39264188, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4210188350640108, guid: 65208c2b67fb1c449867ca3639fb9f2b, type: 2}
+    - target: {fileID: 4210188350640108, guid: 145a14a838f88824581d4dca39264188, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4210188350640108, guid: 65208c2b67fb1c449867ca3639fb9f2b, type: 2}
+    - target: {fileID: 4210188350640108, guid: 145a14a838f88824581d4dca39264188, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4210188350640108, guid: 65208c2b67fb1c449867ca3639fb9f2b, type: 2}
+    - target: {fileID: 4210188350640108, guid: 145a14a838f88824581d4dca39264188, type: 2}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
-    - target: {fileID: 114755699585420742, guid: 65208c2b67fb1c449867ca3639fb9f2b,
+    - target: {fileID: 114755699585420742, guid: 145a14a838f88824581d4dca39264188,
         type: 2}
-      propertyPath: Invetory.Array.data[0]
+      propertyPath: BackpackConfig
       value: 
-      objectReference: {fileID: 11400000, guid: 2653a396b4353fa4988c11b64f96d9a2,
+      objectReference: {fileID: 11400000, guid: 76c114ca330e3cc42a3692dc5049edac,
         type: 2}
-    - target: {fileID: 114755699585420742, guid: 65208c2b67fb1c449867ca3639fb9f2b,
+    - target: {fileID: 114755699585420742, guid: 145a14a838f88824581d4dca39264188,
         type: 2}
-      propertyPath: Invetory.Array.data[1]
-      value: 
-      objectReference: {fileID: 11400000, guid: ed6b679dd1780574dbd4c3fa0f8bd6b3,
-        type: 2}
-    - target: {fileID: 114755699585420742, guid: 65208c2b67fb1c449867ca3639fb9f2b,
-        type: 2}
-      propertyPath: Invetory.Array.data[2]
-      value: 
-      objectReference: {fileID: 11400000, guid: 2653a396b4353fa4988c11b64f96d9a2,
-        type: 2}
-    - target: {fileID: 114755699585420742, guid: 65208c2b67fb1c449867ca3639fb9f2b,
-        type: 2}
-      propertyPath: Invetory.Array.data[3]
-      value: 
-      objectReference: {fileID: 11400000, guid: ed6b679dd1780574dbd4c3fa0f8bd6b3,
-        type: 2}
-    - target: {fileID: 114755699585420742, guid: 65208c2b67fb1c449867ca3639fb9f2b,
-        type: 2}
-      propertyPath: Invetory.Array.data[4]
-      value: 
-      objectReference: {fileID: 11400000, guid: 2653a396b4353fa4988c11b64f96d9a2,
-        type: 2}
+      propertyPath: Capacity
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 65208c2b67fb1c449867ca3639fb9f2b, type: 2}
+  m_ParentPrefab: {fileID: 100100000, guid: 145a14a838f88824581d4dca39264188, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1246631759
 GameObject:
@@ -213,8 +189,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   items:
-  - {fileID: 1771400035342918, guid: c8b2e2085d4748243b44e50c353b9802, type: 2}
-  - {fileID: 1191451105283722, guid: daef900eb5ee5a242a2d5ba2ebbc32f3, type: 2}
+  - {fileID: 1771400035342918, guid: 35139ce83f1e841458d589f36964b729, type: 2}
+  - {fileID: 1191451105283722, guid: c2e300031fef86343bfbf64bf10206de, type: 2}
 --- !u!4 &1246631761
 Transform:
   m_ObjectHideFlags: 0
