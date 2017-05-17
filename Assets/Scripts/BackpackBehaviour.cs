@@ -30,7 +30,7 @@ public class BackpackBehaviour : MonoBehaviour
 
     private void Awake()
     {
-        onBackPackChangeDup.AddListener(AddToPack());
+        onBackPackChangeDup.AddListener(AddToPack());                   // Can't figure this out
         onBackPackChange.AddListener(PlaceItem);
     }
 
