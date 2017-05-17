@@ -38,12 +38,12 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 9
-  m_GIWorkflowMode: 1
+  m_GIWorkflowMode: 0
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -282,6 +282,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 114790882978018504, guid: 965a46b021957174894f4307590e7a7f,
         type: 2}
+      propertyPath: AdditionalItem.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114790882978018504, guid: 965a46b021957174894f4307590e7a7f,
+        type: 2}
       propertyPath: onBackPackChange.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
@@ -360,6 +365,31 @@ Prefab:
     - target: {fileID: 114790882978018504, guid: 965a46b021957174894f4307590e7a7f,
         type: 2}
       propertyPath: onBackPackChange.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 114790882978018504, guid: 965a46b021957174894f4307590e7a7f,
+        type: 2}
+      propertyPath: AdditionalItem.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114790882978018504, guid: 965a46b021957174894f4307590e7a7f,
+        type: 2}
+      propertyPath: AdditionalItem.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114790882978018504, guid: 965a46b021957174894f4307590e7a7f,
+        type: 2}
+      propertyPath: AdditionalItem.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 275694155}
+    - target: {fileID: 114790882978018504, guid: 965a46b021957174894f4307590e7a7f,
+        type: 2}
+      propertyPath: AdditionalItem.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: AddToPack
+      objectReference: {fileID: 0}
+    - target: {fileID: 114790882978018504, guid: 965a46b021957174894f4307590e7a7f,
+        type: 2}
+      propertyPath: AdditionalItem.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     m_RemovedComponents: []

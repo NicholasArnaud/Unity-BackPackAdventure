@@ -2,25 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
-using UnityEngine.Events;               // Change
+using UnityEngine.Events;
 
 public class BackpackBehaviour : MonoBehaviour
 {
-    // Change ______________________________________________________________________
-    [System.Serializable]
-    public class OnBackPackChange : UnityEvent
-    {
-    }
-    public OnBackPackChange onBackPackChange;
 
-    [System.Serializable]
-    public class OnBackPackChangeDup : UnityEvent
-    {
-    }
-
-    public OnBackPackChangeDup onBackPackChangeDup;
-
-
+    [SerializeField]
+    AddItem AdditionalItem = new AddItem();
 
     public Backpack BackpackConfig;
     public List<Item> Invetory;
@@ -28,24 +16,21 @@ public class BackpackBehaviour : MonoBehaviour
 
     private int _capacity;
 
-    private void Awake()
-    {
-        onBackPackChangeDup.AddListener(AddToPack());                   // Can't figure this out
-        onBackPackChange.AddListener(PlaceItem);
-    }
-
     private void Start()
     {
         _capacity = BackpackConfig.Capacity;
         BackpackConfig = Instantiate(BackpackConfig);
         Invetory = BackpackConfig.Inventory;
     }
-    // End of changes ______________________________________________________________________
 
     public void AddToPack(Item item)
     {
+        
         if (Invetory.Count <= _capacity)
+        {
             Invetory.Add(item);
+            //AdditionalItem.Invoke(item);
+        }
     }
 
     public void PlaceItem()
