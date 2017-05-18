@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
-using UnityEngine.Events;
+using UnityEngine.UI;
 
 public class BackpackBehaviour : MonoBehaviour
 {
@@ -13,6 +13,7 @@ public class BackpackBehaviour : MonoBehaviour
     public Backpack BackpackConfig;
     public List<Item> Inventory;
     public GameObject ItemPrefab;
+    public Text ChosenItemText;
 
     private int _capacity;
 
@@ -21,7 +22,6 @@ public class BackpackBehaviour : MonoBehaviour
         _capacity = BackpackConfig.Capacity;
         BackpackConfig = Instantiate(BackpackConfig);
         Inventory = BackpackConfig.Inventory;
-        AdditionalItem.AddListener(AddToPack);
     }
 
     public void AddToPack(Item item)
@@ -29,8 +29,8 @@ public class BackpackBehaviour : MonoBehaviour
         
         if (Inventory.Count <= _capacity)
         {
-            Inventory.Add(item);
             AdditionalItem.Invoke(item);
+            Inventory.Add(item);
         }
     }
 
@@ -90,5 +90,9 @@ public class BackpackBehaviour : MonoBehaviour
         }
     }
 
+    public void ItemPicked(Item item)
+    {
+        ChosenItemText.text = item.name + "\n";
+    }
    
 }
