@@ -21,6 +21,7 @@ public class BackpackBehaviour : MonoBehaviour
         _capacity = BackpackConfig.Capacity;
         BackpackConfig = Instantiate(BackpackConfig);
         Inventory = BackpackConfig.Inventory;
+        AdditionalItem.AddListener(AddToPack);
     }
 
     public void AddToPack(Item item)
@@ -29,7 +30,7 @@ public class BackpackBehaviour : MonoBehaviour
         if (Inventory.Count <= _capacity)
         {
             Inventory.Add(item);
-            //AdditionalItem.Invoke(item);
+            AdditionalItem.Invoke(item);
         }
     }
 
