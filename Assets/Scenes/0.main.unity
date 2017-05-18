@@ -194,7 +194,7 @@ GameObject:
   - component: {fileID: 874438074}
   - component: {fileID: 874438073}
   m_Layer: 5
-  m_Name: Collected Item
+  m_Name: CollectedItemText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
