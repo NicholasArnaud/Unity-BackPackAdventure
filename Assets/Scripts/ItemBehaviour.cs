@@ -5,10 +5,8 @@ using UnityEngine.UI;
 
 public class ItemBehaviour : MonoBehaviour
 {
-    AddItem AdditionalItem = new AddItem();
     public Item itemConfig;
     private Item _runtimeItem;
-    public Text ItemPicked;
 
     private void Start()
     {
@@ -19,7 +17,6 @@ public class ItemBehaviour : MonoBehaviour
     {
         if (other.tag == "backpack")
         {
-            AdditionalItem.Invoke(_runtimeItem);
             other.GetComponent<BackpackBehaviour>().AddToPack(_runtimeItem);
             Destroy(gameObject);
         }
