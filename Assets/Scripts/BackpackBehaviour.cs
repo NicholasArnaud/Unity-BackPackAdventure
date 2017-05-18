@@ -11,7 +11,7 @@ public class BackpackBehaviour : MonoBehaviour
     AddItem AdditionalItem = new AddItem();
 
     public Backpack BackpackConfig;
-    public List<Item> Invetory;
+    public List<Item> Inventory;
     public GameObject ItemPrefab;
 
     private int _capacity;
@@ -20,39 +20,39 @@ public class BackpackBehaviour : MonoBehaviour
     {
         _capacity = BackpackConfig.Capacity;
         BackpackConfig = Instantiate(BackpackConfig);
-        Invetory = BackpackConfig.Inventory;
+        Inventory = BackpackConfig.Inventory;
     }
 
     public void AddToPack(Item item)
     {
         
-        if (Invetory.Count <= _capacity)
+        if (Inventory.Count <= _capacity)
         {
-            Invetory.Add(item);
+            Inventory.Add(item);
             //AdditionalItem.Invoke(item);
         }
     }
 
     public void PlaceItem()
     {
-        if(Invetory.Count == 0)
+        if(Inventory.Count == 0)
             return;
         
         var position = this.transform.position;
         position.x++;        
         var newItem = Instantiate(ItemPrefab, position, Quaternion.identity);
-        newItem.GetComponent<ItemBehaviour>().itemConfig = Invetory[0];
-        newItem.name = Invetory[0].name + "(Clone)";
-        Invetory.RemoveAt(0);
+        newItem.GetComponent<ItemBehaviour>().itemConfig = Inventory[0];
+        newItem.name = Inventory[0].name + "(Clone)";
+        Inventory.RemoveAt(0);
     }
 
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            if (Invetory.Count == 0)
+            if (Inventory.Count == 0)
                 return;
-            Invetory.RemoveAt(0);
+            Inventory.RemoveAt(0);
         }
 
         if (Input.GetKeyDown(KeyCode.W))
