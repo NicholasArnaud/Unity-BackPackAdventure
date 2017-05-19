@@ -88,6 +88,18 @@ public class BackpackBehaviour : MonoBehaviour
         {
             PlaceItem();
         }
+
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            Backpack saveBackpack = ScriptableObject.CreateInstance<Backpack>();
+            saveBackpack.Inventory = Inventory;
+            BackPackSaver.Instance.SaveBackPack(saveBackpack, "Current Backpack");
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            Inventory = BackPackLoader.Instance.LoadBackPack("Current Backpack").Inventory;
+        }
     }
 
     public void ItemPicked(Item item)

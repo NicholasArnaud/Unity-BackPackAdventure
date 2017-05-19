@@ -215,6 +215,18 @@ Prefab:
       propertyPath: AdditionalItem.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 114790882978018504, guid: 965a46b021957174894f4307590e7a7f,
+        type: 2}
+      propertyPath: BackpackToSave
+      value: 
+      objectReference: {fileID: 11400000, guid: bdef07398f4eb3e4497689a573f6f4ff,
+        type: 2}
+    - target: {fileID: 114790882978018504, guid: 965a46b021957174894f4307590e7a7f,
+        type: 2}
+      propertyPath: SaveBackpackHere
+      value: 
+      objectReference: {fileID: 11400000, guid: bdef07398f4eb3e4497689a573f6f4ff,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 965a46b021957174894f4307590e7a7f, type: 2}
   m_IsPrefabParent: 0
@@ -513,7 +525,7 @@ Camera:
   near clip plane: 0.3
   far clip plane: 1000
   field of view: 60
-  orthographic: 0
+  orthographic: 1
   orthographic size: 5
   m_Depth: -1
   m_CullingMask:
