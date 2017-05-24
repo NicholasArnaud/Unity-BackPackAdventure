@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
+#if UNITY_EDITOR
 [CreateAssetMenu(menuName = "DropTable")]
 public class DropTable : ScriptableObject
 {
@@ -52,3 +53,4 @@ public class LootTableEditor : Editor
         GUILayout.Label(labelInfo);
     }
 }
+#endif

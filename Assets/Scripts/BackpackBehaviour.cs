@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using System.ComponentModel;
+﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,11 +12,15 @@ public class BackpackBehaviour : MonoBehaviour
     public List<Item> Inventory;
     public GameObject ItemPrefab;
     public Text ChosenItemText;
+    public Text ItemsInPackText;
+    public Text SaveText;
 
     private int _capacity;
+    private int saveNum;
 
     private void Start()
     {
+        saveNum = 0;
         _capacity = BackpackConfig.Capacity;
         BackpackConfig = Instantiate(BackpackConfig);
         Inventory = BackpackConfig.Inventory;
@@ -26,7 +28,6 @@ public class BackpackBehaviour : MonoBehaviour
 
     public void AddToPack(Item item)
     {
-        
         if (Inventory.Count <= _capacity)
         {
             AdditionalItem.Invoke(item);
@@ -45,6 +46,11 @@ public class BackpackBehaviour : MonoBehaviour
         newItem.GetComponent<ItemBehaviour>().itemConfig = Inventory[0];
         newItem.name = Inventory[0].name + "(Clone)";
         Inventory.RemoveAt(0);
+        ItemsInPackText.text = "Items:";
+        foreach (var item in Inventory)
+        {
+            AdditionalItem.Invoke(item);
+        }
     }
 
     private void Update()
@@ -54,6 +60,11 @@ public class BackpackBehaviour : MonoBehaviour
             if (Inventory.Count == 0)
                 return;
             Inventory.RemoveAt(0);
+            ItemsInPackText.text = "Items:";
+            foreach (var item in Inventory)
+            {
+                AdditionalItem.Invoke(item);
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.W))
@@ -91,20 +102,32 @@ public class BackpackBehaviour : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.P))
         {
+            saveNum += 1;
             Backpack saveBackpack = ScriptableObject.CreateInstance<Backpack>();
             saveBackpack.Inventory = Inventory;
             BackPackSaver.Instance.SaveBackPack(saveBackpack, "Current Backpack");
+            SaveText.text = "Saved " + saveNum;
         }
 
         if (Input.GetKeyDown(KeyCode.L))
         {
             Inventory = BackPackLoader.Instance.LoadBackPack("Current Backpack").Inventory;
+            ItemsInPackText.text = "Items:";
+            foreach (var item in Inventory)
+            {
+                AdditionalItem.Invoke(item);
+            }
         }
     }
 
     public void ItemPicked(Item item)
     {
         ChosenItemText.text = item.name + "\n";
+    }
+
+    public void ItemInPackText(Item item)
+    {
+        ItemsInPackText.text += item.name + "\n";
     }
    
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using System.Linq;
 
 [CreateAssetMenu(fileName = "Backpack Loader", menuName = "GameState/Loaders/BackPack Loader", order = 1)]
@@ -23,7 +21,7 @@ public class BackPackLoader : ScriptableObject
 
     public Backpack LoadBackPack(string filename)
     {
-        var path = Application.dataPath + "/Streaming Assets/" + filename + ".json";
+        var path = Application.persistentDataPath + filename + ".json";
         var json = System.IO.File.ReadAllText(path);
         var backpack = CreateInstance<Backpack>();
         JsonUtility.FromJsonOverwrite(json, backpack);
