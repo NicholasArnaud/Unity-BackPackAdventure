@@ -15,16 +15,16 @@ public class BackPackSaver : ScriptableObject
                 instance = CreateInstance<BackPackSaver>();
             return instance;
         }
-
     }
 
     public void SaveBackPack(Backpack backpack, string filename)
-    {
-        var path1 = Application.dataPath + "/Streaming Assets/" + filename + ".json";
+    {        
+        var path1 = Application.persistentDataPath + filename + ".json";
         var json = JsonUtility.ToJson(backpack, true);
         Debug.Log("Save Successful");
         System.IO.File.WriteAllText(path1, json);
     }
+
     public void TestIt()
     {
        Debug.Log("singleton is up");

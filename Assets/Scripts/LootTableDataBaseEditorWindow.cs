@@ -1,10 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 using System.IO;
 
-
+#if UNITY_EDITOR
 //Work teacher worked on in front of class
 public class LootTableDataBaseEditorWindow : EditorWindow
 {
@@ -50,3 +52,4 @@ public class LootTableDataBaseEditorWindow : EditorWindow
             EditorGUILayout.TextField("Table File:: ", file);
     }
 }
+#endif
